@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Termos de Uso - Mgama Advocacia e Consultoria Jurídica. Condições para utilização do site e informações sobre a relação advogado-cliente.">
+    <title>Termos de Uso | Mgama Advocacia</title>
+
+    <style>
+        :root {
+            --azul-escuro: #0a1f3f;
+            --azul-medio: #132d54;
+            --dourado: #b88a3c;
+            --dourado-claro: #d4a853;
+            --branco: #ffffff;
+            --cinza-claro: #f5f4f0;
+            --cinza-texto: #4a4a4a;
+            --cinza-escuro: #2a2a2a;
+            --sombras: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transicao: all 0.3s ease;
+            --borda-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--cinza-escuro);
+            line-height: 1.7;
+            background-color: var(--cinza-claro);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .top-bar {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            font-size: 0.85rem;
+            padding: 8px 0;
+            border-bottom: 2px solid var(--dourado);
+        }
+        .top-bar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar a {
+            color: var(--branco);
+            text-decoration: none;
+            transition: var(--transicao);
+        }
+        .top-bar a:hover {
+            color: var(--dourado-claro);
+        }
+        .top-bar .whatsapp-link {
+            background-color: #25D366;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.82rem;
+            transition: var(--transicao);
+        }
+
+        .header {
+            background-color: var(--branco);
+            padding: 15px 0;
+            box-shadow: var(--sombras);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            line-height: 1.2;
+        }
+        .logo span {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: var(--dourado);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .logo .logo-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 6px;
+            vertical-align: middle;
+            background: var(--dourado);
+            border-radius: 50%;
+            position: relative;
+        }
+        .logo .logo-icon::after {
+            content: '⚖';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.1rem;
+            color: var(--branco);
+        }
+        .btn-voltar {
+            background-color: var(--azul-escuro);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: var(--transicao);
+        }
+        .btn-voltar:hover {
+            background-color: var(--dourado);
+            color: #fff;
+        }
+
+        .pagina-legal {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px 30px;
+            background: var(--branco);
+            border-radius: 10px;
+            box-shadow: var(--sombras);
+        }
+        .pagina-legal h2 {
+            color: var(--azul-escuro);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--dourado);
+        }
+        .pagina-legal .data-atualizacao {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        .pagina-legal h3 {
+            color: var(--azul-escuro);
+            font-size: 1.2rem;
+            margin: 30px 0 12px;
+            padding-left: 10px;
+            border-left: 3px solid var(--dourado);
+        }
+        .pagina-legal p,
+        .pagina-legal ul {
+            margin-bottom: 14px;
+            color: var(--cinza-texto);
+            line-height: 1.9;
+        }
+        .pagina-legal ul {
+            padding-left: 25px;
+        }
+        .pagina-legal ul li {
+            margin-bottom: 6px;
+        }
+        .pagina-legal strong {
+            color: var(--azul-escuro);
+        }
+
+        .footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 30px 0 20px;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: var(--dourado-claro);
+        }
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer-bottom {
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .pagina-legal {
+                margin: 25px 10px;
+                padding: 25px 18px;
+            }
+            .pagina-legal h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span>📞 (41) 3399-3087</span>
+            <a href="https://wa.me/5541999311590" target="_blank" rel="noopener" class="whatsapp-link">WhatsApp</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"></span> Mgama Advocacia
+                <span>Consultoria Jurídica Empresarial</span>
+            </a>
+            <a href="index.html" class="btn-voltar">← Voltar ao site</a>
+        </div>
+    </header>
+
+    <main class="pagina-legal">
+        <h2>Termos de Uso</h2>
+        <p class="data-atualizacao">Última atualização: 27 de maio de 2026</p>
+
+        <p>Bem-vindo ao site da <strong>Mgama Advocacia e Consultoria Jurídica</strong> (Mgama Servicos de Atendimento Empresarial LTDA, CNPJ 41.901.490/0001-84). Ao acessar e utilizar este site, você concorda com os presentes Termos de Uso. Caso não concorde com qualquer disposição aqui contida, pedimos que interrompa imediatamente a navegação.</p>
+
+        <h3>1. Natureza do Conteúdo</h3>
+        <p>Todo o conteúdo disponível neste site possui caráter <strong>exclusivamente informativo</strong>. Nenhuma informação aqui contida deve ser interpretada como aconselhamento jurídico formal, recomendação ou orientação específica para qualquer caso concreto.</p>
+
+        <h3>2. Não Criação de Vínculo Profissional</h3>
+        <p>O simples envio de mensagens através do formulário de contato, e-mail, WhatsApp, telefone ou qualquer outro meio disponibilizado neste site <strong>não configura</strong> relação advogado-cliente. O sigilo profissional e a responsabilidade técnica somente se aplicam após a formalização do vínculo contratual, mediante contrato de honorários advocatícios devidamente assinado pelas partes.</p>
+
+        <h3>3. Propriedade Intelectual</h3>
+        <p>Todos os textos, imagens, logotipos, layout, design e demais elementos visuais deste site são de propriedade exclusiva da Mgama Advocacia ou devidamente licenciados para seu uso. É expressamente proibida a reprodução total ou parcial, a distribuição, a modificação ou o uso não autorizado de qualquer conteúdo sem autorização prévia e por escrito.</p>
+
+        <h3>4. Limitação de Responsabilidade</h3>
+        <p>A Mgama Advocacia e Consultoria Jurídica não se responsabiliza por:</p>
+        <ul>
+            <li>Decisões tomadas com base exclusivamente no conteúdo informativo disponível neste site;</li>
+            <li>Eventuais indisponibilidades técnicas, erros de sistema ou interrupções no funcionamento do site;</li>
+            <li>Conteúdo de sites de terceiros eventualmente linkados ou referenciados em nossas páginas;</li>
+            <li>Danos de qualquer natureza decorrentes do uso inadequado das informações aqui contidas.</li>
+        </ul>
+
+        <h3>5. Dever de Informação e Transparência (OAB)</h3>
+        <p>Em conformidade com o <strong>Código de Ética e Disciplina da OAB</strong> e o <strong>Provimento nº 205/2021 do Conselho Federal da OAB</strong>, informamos expressamente que este site não realiza captação de clientela, mercantilização da advocacia ou qualquer forma de propaganda enganosa. Todas as informações são prestadas de forma ética, transparente e em estrita observância às normas que regem a profissão.</p>
+
+        <h3>6. Uso do Formulário de Contato</h3>
+        <p>As informações enviadas através do formulário de contato devem ser verídicas, completas e não conter dados sigilosos de terceiros sem a devida autorização. Reservamo-nos o direito de não responder a mensagens que contenham conteúdo ofensivo, ilegal, discriminatório ou que se caracterizem como spam.</p>
+
+        <h3>7. Foro Competente</h3>
+        <p>Para dirimir quaisquer questões ou controvérsias relacionadas a estes Termos de Uso, fica eleito o <strong>Foro da Comarca de Campo Largo, Estado do Paraná</strong>, com expressa renúncia a qualquer outro, por mais privilegiado que seja.</p>
+
+        <h3>8. Contato</h3>
+        <p>Em caso de dúvidas sobre estes Termos de Uso, entre em contato conosco pelos canais oficiais:</p>
+        <ul>
+            <li><strong>E-mail:</strong> marcos_gama@hotmail.com</li>
+            <li><strong>Telefone:</strong> (41) 3399-3087</li>
+            <li><strong>WhatsApp:</strong> (41) 99931-1590</li>
+            <li><strong>Endereço:</strong> Rua XV de Novembro, 2787, Centro, Campo Largo/PR, CEP 83601-030</li>
+        </ul>
+
+        <h3>9. Alterações nos Termos</h3>
+        <p>Estes Termos de Uso podem ser atualizados a qualquer momento, a critério exclusivo da Mgama Advocacia. Recomendamos a consulta periódica a esta página para manter-se informado sobre eventuais modificações. A data da última atualização estará sempre indicada no topo do documento.</p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Mgama Advocacia e Consultoria Jurídica</strong> | CNPJ 41.901.490/0001-84</p>
+            <p>Rua XV de Novembro, 2787, Centro, Campo Largo/PR, CEP 83601-030</p>
+            <p style="margin-top:10px;">
+                <a href="index.html">Página Principal</a> |
+                <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+                <a href="mailto:marcos_gama@hotmail.com">E-mail</a>
+            </p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mgama Advocacia. Todos os direitos reservados. As informações deste site possuem caráter informativo e não constituem aconselhamento jurídico.</p>
+                <p>A relação advogado-cliente somente se estabelece mediante contrato. Em conformidade com o Provimento nº 205/2021 da OAB.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
