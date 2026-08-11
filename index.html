@@ -3,1094 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Braia & Pessoa Sociedade de Advogados — Advocacia especializada em MEI e PGMEI. Assessoria jurídica completa para microempreendedores individuais em São Paulo. Regularização, DAS-MEI, benefícios do INSS, contratos e defesa do seu negócio.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://braiapessoa.adv.br">
-    <title>Braia & Pessoa Advogados | Especialistas em MEI e PGMEI — São Paulo/SP</title>
-
-    <!-- Favicon básico -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='54' font-size='52'>⚖️</text></svg>" type="image/svg+xml">
-
+    <title>Atendimento - Fale Conosco</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --dourado: #b68b40;
-            --dourado-claro: #d4af6c;
-            --dourado-escuro: #8b6914;
-            --azul-escuro: #1a2740;
-            --azul-medio: #233352;
-            --cinza-escuro: #2d2d2d;
-            --cinza-medio: #555;
-            --cinza-claro: #f4f4f4;
-            --branco: #ffffff;
-            --preto-suave: #1a1a1a;
-            --sombra: 0 4px 20px rgba(0, 0, 0, 0.1);
-            --sombra-hover: 0 10px 30px rgba(0, 0, 0, 0.18);
-            --borda-radius: 12px;
-            --transicao: all 0.3s ease;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.7;
-            color: var(--cinza-escuro);
-            background-color: var(--branco);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Top bar */
-        .top-bar {
-            background-color: var(--azul-escuro);
-            color: var(--branco);
-            font-size: 0.85rem;
-            padding: 8px 0;
-            display: none;
-        }
-        .top-bar .container {
+            background: #f1f5f9;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .top-bar a {
-            color: var(--dourado-claro);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .top-bar a:hover {
-            color: var(--dourado);
-        }
-
-        @media (min-width: 768px) {
-            .top-bar {
-                display: block;
-            }
-        }
-
-        /* Header */
-        .header {
-            background-color: var(--branco);
-            padding: 14px 0;
-            border-bottom: 3px solid var(--dourado);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-        }
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .logo-icon {
-            font-size: 2.5rem;
-        }
-        .logo-text h1 {
-            font-size: 1.2rem;
-            color: var(--azul-escuro);
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            line-height: 1.2;
-        }
-        .logo-text .sub {
-            font-size: 0.75rem;
-            color: var(--dourado-escuro);
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        .header-cta {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-        .btn-whatsapp {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: #25d366;
-            color: #fff;
-            padding: 11px 22px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            transition: var(--transicao);
-            white-space: nowrap;
-            box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
-        }
-        .btn-whatsapp:hover {
-            background-color: #1fb855;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
-        }
-        .btn-whatsapp .icon {
-            font-size: 1.3rem;
-        }
-        .header-phone {
-            color: var(--azul-escuro);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            white-space: nowrap;
-        }
-        .header-phone:hover {
-            color: var(--dourado-escuro);
-        }
-
-        /* Hero */
-        .hero {
-            background: linear-gradient(150deg, #1a2740 0%, #1f3354 40%, #1a2740 100%);
-            color: var(--branco);
-            padding: 60px 0 70px;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -40%;
-            right: -15%;
-            width: 55%;
-            height: 180%;
-            background: radial-gradient(ellipse, rgba(182, 139, 64, 0.15) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .hero .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-        @media (min-width: 900px) {
-            .hero .container {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .hero-text h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            line-height: 1.25;
-            margin-bottom: 18px;
-            letter-spacing: -0.5px;
-        }
-        .hero-text h2 span {
-            color: var(--dourado-claro);
-            display: inline;
-        }
-        @media (min-width: 600px) {
-            .hero-text h2 {
-                font-size: 2.4rem;
-            }
-        }
-        @media (min-width: 900px) {
-            .hero-text h2 {
-                font-size: 2.8rem;
-            }
-        }
-        .hero-text p {
-            font-size: 1.1rem;
-            color: #d0d6e0;
-            margin-bottom: 26px;
-            max-width: 520px;
-        }
-        .hero-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 24px;
-        }
-        .hero-badge {
-            background-color: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 30px;
-            padding: 8px 16px;
-            font-size: 0.85rem;
-            color: #e0d5c0;
-            font-weight: 500;
-        }
-        .hero-image-wrapper {
-            display: flex;
             justify-content: center;
-            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1rem;
         }
-        .hero-image-wrapper img {
+
+        .container {
+            max-width: 700px;
             width: 100%;
-            max-width: 480px;
-            border-radius: var(--borda-radius);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-            object-fit: cover;
-            aspect-ratio: 4/3;
-        }
-        .btn-primario {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: var(--dourado);
-            color: var(--azul-escuro);
-            padding: 14px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: var(--transicao);
-            border: 2px solid var(--dourado);
-            cursor: pointer;
-        }
-        .btn-primario:hover {
-            background-color: transparent;
-            color: var(--dourado-claro);
-            border-color: var(--dourado-claro);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(182, 139, 64, 0.3);
-        }
-
-        /* Aviso */
-        .aviso-banner {
-            background-color: #fdf8f0;
-            border-left: 5px solid var(--dourado);
-            padding: 16px 22px;
-            margin: 30px auto;
-            max-width: 1200px;
-            border-radius: 0 8px 8px 0;
-            font-size: 0.95rem;
-            color: #5c4a2e;
-        }
-        .aviso-banner strong {
-            color: var(--dourado-escuro);
-        }
-
-        /* Seções */
-        .secao {
-            padding: 70px 0;
-        }
-        .secao-cinza {
-            background-color: #fafaf8;
-        }
-        .secao-titulo {
             text-align: center;
-            margin-bottom: 50px;
-        }
-        .secao-titulo h3 {
-            font-size: 1.8rem;
-            color: var(--azul-escuro);
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: -0.3px;
-        }
-        .secao-titulo p {
-            color: var(--cinza-medio);
-            font-size: 1.05rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .linha-dourada {
-            width: 50px;
-            height: 3px;
-            background-color: var(--dourado);
-            margin: 14px auto;
-            border-radius: 3px;
         }
 
-        /* Grid de cards */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
+        .header {
+            margin-bottom: 3rem;
         }
-        @media (min-width: 600px) {
-            .cards-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
         }
-        @media (min-width: 900px) {
-            .cards-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        .card-servico {
-            background: var(--branco);
-            border: 1px solid #e8e8e4;
-            border-radius: var(--borda-radius);
-            padding: 28px 22px;
-            transition: var(--transicao);
-            text-align: center;
-            box-shadow: var(--sombra);
-        }
-        .card-servico:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--sombra-hover);
-            border-color: var(--dourado-claro);
-        }
-        .card-servico .card-icon {
-            font-size: 2.6rem;
-            margin-bottom: 14px;
-        }
-        .card-servico h4 {
-            color: var(--azul-escuro);
+
+        .header p {
+            color: #64748b;
             font-size: 1.1rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .card-servico p {
-            font-size: 0.9rem;
-            color: var(--cinza-medio);
-            line-height: 1.5;
-        }
-
-        /* Sobre */
-        .sobre-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            align-items: center;
-        }
-        @media (min-width: 900px) {
-            .sobre-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .sobre-grid img {
-            width: 100%;
             max-width: 500px;
-            border-radius: var(--borda-radius);
-            box-shadow: var(--sombra);
-            object-fit: cover;
-            aspect-ratio: 4/3;
             margin: 0 auto;
-            display: block;
-        }
-        .sobre-info h3 {
-            font-size: 1.6rem;
-            color: var(--azul-escuro);
-            margin-bottom: 14px;
-            font-weight: 700;
-        }
-        .sobre-info p {
-            color: var(--cinza-medio);
-            margin-bottom: 12px;
-        }
-        .dados-empresa {
-            background: #f9f9f7;
-            border-radius: 10px;
-            padding: 18px 20px;
-            margin-top: 16px;
-            font-size: 0.9rem;
             line-height: 1.6;
         }
-        .dados-empresa strong {
-            color: var(--azul-escuro);
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
         }
 
-        /* Diferenciais */
-        .diferenciais-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        @media (min-width: 600px) {
-            .diferenciais-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        @media (min-width: 900px) {
-            .diferenciais-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        .dif-card {
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            padding: 18px;
-            border-radius: 10px;
-            background: #fdfdfb;
-            border: 1px solid #eee;
-        }
-        .dif-numero {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--dourado);
-            min-width: 40px;
-            text-align: center;
-            line-height: 1;
-        }
-        .dif-texto h4 {
-            color: var(--azul-escuro);
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-        .dif-texto p {
-            font-size: 0.85rem;
-            color: var(--cinza-medio);
-        }
-
-        /* Metodo */
-        .metodo-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        @media (min-width: 700px) {
-            .metodo-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        .metodo-step {
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-        .metodo-step .step-num {
-            display: inline-flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
+            gap: 1rem;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: #25D366; /* Verde WhatsApp */
+            background: #dcf8c6;
+            padding: 1rem;
             border-radius: 50%;
-            background-color: var(--dourado);
-            color: var(--azul-escuro);
-            font-weight: 800;
-            font-size: 1.3rem;
-            margin-bottom: 14px;
-        }
-        .metodo-step h4 {
-            color: var(--azul-escuro);
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
-        .metodo-step p {
-            font-size: 0.85rem;
-            color: var(--cinza-medio);
-        }
-
-        /* FAQ */
-        .faq-item {
-            border-bottom: 1px solid #e0e0dc;
-            padding: 20px 0;
-            cursor: pointer;
-        }
-        .faq-item h4 {
-            color: var(--azul-escuro);
-            font-weight: 700;
-            font-size: 1.05rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-        }
-        .faq-item h4 .seta {
-            transition: transform 0.3s;
-            font-size: 1.2rem;
-            color: var(--dourado);
-            min-width: 24px;
-            text-align: center;
-        }
-        .faq-item.aberto h4 .seta {
-            transform: rotate(180deg);
-        }
-        .faq-resposta {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.3s;
-            color: var(--cinza-medio);
-            font-size: 0.95rem;
-            padding-right: 30px;
-        }
-        .faq-item.aberto .faq-resposta {
-            max-height: 400px;
-            padding-top: 10px;
-        }
-
-        /* Contato */
-        .contato-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            align-items: start;
-        }
-        @media (min-width: 800px) {
-            .contato-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .form-contato input,
-        .form-contato textarea,
-        .form-contato select {
-            width: 100%;
-            padding: 13px 16px;
-            border: 2px solid #e0e0dc;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            margin-bottom: 14px;
-            transition: var(--transicao);
-            background: #fafaf8;
-        }
-        .form-contato input:focus,
-        .form-contato textarea:focus,
-        .form-contato select:focus {
-            outline: none;
-            border-color: var(--dourado);
-            background: #fff;
-            box-shadow: 0 0 0 3px rgba(182, 139, 64, 0.1);
-        }
-        .form-contato textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        .form-contato button {
-            width: 100%;
-            padding: 14px;
-            background-color: var(--azul-escuro);
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transicao);
-        }
-        .form-contato button:hover {
-            background-color: #2a3f5f;
-            transform: translateY(-2px);
-        }
-        .form-aviso {
-            font-size: 0.78rem;
-            color: #999;
-            margin-top: 8px;
-            text-align: center;
-        }
-        .info-contato-lista {
-            list-style: none;
-            padding: 0;
-        }
-        .info-contato-lista li {
-            margin-bottom: 14px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.95rem;
-            color: var(--cinza-escuro);
-        }
-        .info-contato-lista .icone {
-            font-size: 1.3rem;
-            min-width: 26px;
-            text-align: center;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--azul-escuro);
-            color: #c5cdd8;
-            padding: 40px 0 20px;
-            font-size: 0.88rem;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
-            margin-bottom: 24px;
-        }
-        @media (min-width: 600px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        @media (min-width: 900px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        .footer h5 {
-            color: var(--dourado-claro);
-            font-size: 1rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        .footer a {
-            color: #b0bcc8;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            color: var(--dourado-claro);
-            text-decoration: underline;
-        }
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.12);
-            padding-top: 18px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #8895a2;
-        }
-
-        /* Botão flutuante WhatsApp */
-        .whatsapp-flutuante {
-            position: fixed;
-            bottom: 22px;
-            right: 22px;
-            z-index: 999;
-            background-color: #25d366;
-            color: #fff;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
+            width: 80px;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            text-decoration: none;
-            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
-            transition: var(--transicao);
-        }
-        .whatsapp-flutuante:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 24px rgba(37, 211, 102, 0.5);
         }
 
-        /* Responsividade extra */
-        @media (max-width: 400px) {
-            .hero-text h2 {
-                font-size: 1.5rem;
-            }
-            .btn-whatsapp {
-                padding: 10px 16px;
-                font-size: 0.85rem;
-            }
-        }
-
-        /* Páginas de política */
-        .pagina-politica {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 40px 24px;
-            background: #fff;
-            border-radius: var(--borda-radius);
-            box-shadow: var(--sombra);
-            line-height: 1.8;
-        }
-        .pagina-politica h2 {
-            color: var(--azul-escuro);
-            margin-bottom: 20px;
-            font-size: 1.6rem;
-        }
-        .pagina-politica h3 {
-            color: var(--azul-medio);
-            margin: 24px 0 10px;
-            font-size: 1.15rem;
-        }
-        .pagina-politica p,
-        .pagina-politica li {
-            color: #444;
-            margin-bottom: 10px;
-        }
-        .pagina-politica ul {
-            padding-left: 20px;
-            margin-bottom: 14px;
-        }
-        .voltar-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: var(--dourado-escuro);
-            text-decoration: none;
+        .card h2 {
+            font-size: 1.5rem;
+            color: #0f172a;
             font-weight: 600;
         }
-        .voltar-link:hover {
-            text-decoration: underline;
+
+        .card p {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s, transform 0.1s;
+            margin-top: 0.5rem;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebc5c;
+            transform: scale(1.02);
+        }
+
+        .btn-whatsapp i {
+            font-size: 1.2rem;
+            color: white;
+            background: transparent;
+            padding: 0;
+            width: auto;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* Ajuste para celulares muito pequenos */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 1.5rem 1rem;
+            }
         }
     </style>
 </head>
 <body>
-
-    <!-- ========== TOP BAR ========== -->
-    <div class="top-bar">
-        <div class="container">
-            <span>📍 Avenida Francisco Matarazzo, 1752 — Conj 2612 Bloco A — Água Branca — São Paulo/SP</span>
-            <span>📧 <a href="mailto:rovania@braiapessoa.adv.br">rovania@braiapessoa.adv.br</a> | Seg. a Sex. — 09h às 18h</span>
+    <div class="container">
+        <div class="header">
+            <h1>Central de Atendimento</h1>
+            <p>Escolha o setor desejado e fale agora mesmo pelo WhatsApp. Respostas rápidas e atendimento humanizado.</p>
         </div>
-    </div>
 
-    <!-- ========== HEADER ========== -->
-    <header class="header">
-        <div class="container">
-            <div class="logo-area">
-                <span class="logo-icon">⚖️</span>
-                <div class="logo-text">
-                    <h1>Braia & Pessoa</h1>
-                    <span class="sub">Sociedade de Advogados</span>
-                </div>
+        <div class="cards">
+            <!-- Card Vendas -->
+            <div class="card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Vendas</h2>
+                <p>Contrate novos planos, internet, TV ou telefone.</p>
+                <a href="https://wa.me/5599981668617?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20setor%20de%20Vendas." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                </a>
             </div>
-            <div class="header-cta">
-                <a href="tel:+5511991355890" class="header-phone">📞 (11) 99135-5890</a>
-                <a href="https://wa.me/5511991355890?text=Ol%C3%A1%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+servi%C3%A7os+jur%C3%ADdicos+para+MEI." class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                    <span class="icon">💬</span> Fale Conosco
+
+            <!-- Card Suporte Técnico -->
+            <div class="card">
+                <i class="fa-solid fa-headset"></i>
+                <h2>Suporte Técnico</h2>
+                <p>Problemas com conexão, lentidão ou equipamentos.</p>
+                <a href="https://wa.me/5599981668617?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Suporte%20T%C3%A9cnico." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+
+            <!-- Card Financeiro -->
+            <div class="card">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h2>Financeiro</h2>
+                <p>Segunda via de boleto, negociação de débitos e pagamentos.</p>
+                <a href="https://wa.me/5599981668617?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Financeiro." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+
+            <!-- Card Cancelamento -->
+            <div class="card">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <h2>Cancelamento</h2>
+                <p>Solicitar cancelamento de plano ou serviço.</p>
+                <a href="https://wa.me/5599981668617?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20cancelamento%20de%20servi%C3%A7o." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+
+            <!-- Card Ouvidoria -->
+            <div class="card">
+                <i class="fa-solid fa-comment-dots"></i>
+                <h2>Ouvidoria</h2>
+                <p>Reclamações, sugestões ou elogios sobre nosso atendimento.</p>
+                <a href="https://wa.me/5599981668617?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Ouvidoria." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
                 </a>
             </div>
         </div>
-    </header>
 
-    <!-- ========== HERO ========== -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h2>Advocacia especializada em <span>MEI e PGMEI</span> para proteger o seu negócio</h2>
-                <p>Há mais de 10 anos orientando microempreendedores individuais em São Paulo. Assessoria jurídica completa: regularização, DAS-MEI atrasado, benefícios do INSS, contratos e defesa do seu negócio — com linguagem clara e estratégia personalizada.</p>
-                <div class="hero-badges">
-                    <span class="hero-badge">✅ CNPJ Ativo</span>
-                    <span class="hero-badge">✅ Sociedade inscrita na OAB/SP</span>
-                    <span class="hero-badge">✅ Desde 2015</span>
-                </div>
-                <a href="https://wa.me/5511991355890?text=Ol%C3%A1%2C+quero+uma+orienta%C3%A7%C3%A3o+sobre+MEI." class="btn-primario" target="_blank" rel="noopener noreferrer">
-                    💬 Falar com um advogado agora
-                </a>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&q=80"
-                alt="Escritório de advocacia Braia & Pessoa — ambiente profissional com livros jurídicos e balança da justiça"
-                loading="eager"
-                onerror="this.src='https://placehold.co/600x450/1a2740/d4af6c?text=Braia+%26+Pessoa+Advogados';">
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== AVISO ========== -->
-    <div class="aviso-banner">
-        <strong>📌 Aviso:</strong> Atendimento com hora marcada. Consulte disponibilidade pelo WhatsApp ou e-mail. A primeira conversa é sem compromisso e não configura vínculo profissional, que se estabelece apenas mediante contrato.
+        <footer>
+            © 2025 - Atendimento via WhatsApp | Respostas em até 2 minutos
+        </footer>
     </div>
-
-    <!-- ========== SERVIÇOS ========== -->
-    <section class="secao" id="servicos">
-        <div class="container">
-            <div class="secao-titulo">
-                <h3>Serviços jurídicos para MEI e PGMEI</h3>
-                <div class="linha-dourada"></div>
-                <p>Atuamos de forma consultiva e contenciosa para proteger o seu negócio e os seus direitos como microempreendedor.</p>
-            </div>
-            <div class="cards-grid">
-                <div class="card-servico">
-                    <div class="card-icon">📋</div>
-                    <h4>Regularização do MEI</h4>
-                    <p>Abertura, alteração e baixa do MEI, correção de pendências, desenquadramento e migração para ME quando o faturamento cresce.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">💰</div>
-                    <h4>DAS-MEI atrasado e PGMEI</h4>
-                    <p>Parcelamento de guias em atraso via PGMEI, negociação de débitos, defesa em cobranças e orientação para regularizar sua situação fiscal.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">🏥</div>
-                    <h4>Benefícios do INSS para MEI</h4>
-                    <p>Aposentadoria, auxílio-doença, salário-maternidade e auxílio-acidente — analisamos seu caso e buscamos o que é seu por direito.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">📄</div>
-                    <h4>Contratos e cobrança</h4>
-                    <p>Contratos de prestação de serviço que protegem você, além de cobrança de clientes inadimplentes para receber pelo seu trabalho.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">🛡️</div>
-                    <h4>Defesa do seu negócio</h4>
-                    <p>Defesa em reclamações de consumidores, problemas com fornecedores, plataformas, negativações indevidas e cobranças abusivas.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">👥</div>
-                    <h4>Questões trabalhistas</h4>
-                    <p>Orientação para contratar com segurança seu primeiro empregado e defender o MEI em eventuais reclamatórias trabalhistas.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">®️</div>
-                    <h4>Proteção de marca</h4>
-                    <p>Registro e defesa da marca do seu negócio para ninguém usar seu nome indevidamente — cuidado simples que evita prejuízos.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="card-icon">🔒</div>
-                    <h4>LGPD para MEI</h4>
-                    <p>Adequação à Lei de Proteção de Dados de forma proporcional ao porte do MEI: sem burocracia, só o necessário para proteger você e seus clientes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== SOBRE ========== -->
-    <section class="secao secao-cinza" id="sobre">
-        <div class="container">
-            <div class="sobre-grid">
-                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
-                alt="Documentos jurídicos e contrato sobre mesa de escritório — advocacia Braia & Pessoa"
-                loading="lazy"
-                onerror="this.src='https://placehold.co/600x450/1a2740/d4af6c?text=Braia+%26+Pessoa+Advogados';">
-                <div class="sobre-info">
-                    <h3>Quem somos</h3>
-                    <p>A <strong>Braia & Pessoa Sociedade de Advogados</strong> foi fundada em 17 de junho de 2015, na cidade de São Paulo, com a missão de oferecer serviços advocatícios de excelência com transparência e ética.</p>
-                    <p>Somos uma sociedade simples pura, inscrita na OAB/SP, com atuação focada em <strong>Direito para MEI e PGMEI</strong>, além de assessoria jurídica completa para pessoas físicas e empresas de pequeno e médio porte.</p>
-                    <p>Acreditamos que advocacia de qualidade começa pela escuta. Dedicamos tempo para entender seu contexto antes de qualquer estratégia — seja ela preventiva, negocial ou judicial.</p>
-                    <div class="dados-empresa">
-                        <p><strong>Razão Social:</strong> Braia & Pessoa Sociedade de Advogados</p>
-                        <p><strong>CNPJ:</strong> 22.980.047/0001-00</p>
-                        <p><strong>Natureza Jurídica:</strong> Sociedade Simples Pura — desde 17/06/2015</p>
-                        <p><strong>Atividade Principal:</strong> Serviços advocatícios (CNAE 69.11-7-01)</p>
-                        <p><strong>Sócios:</strong> Osman Carreira Pessoa e Rovania Braia (Sócia-Administradora)</p>
-                        <p><strong>Capital Social:</strong> R$ 10.000,00</p>
-                        <p><strong>Situação:</strong> Ativa</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== DIFERENCIAIS ========== -->
-    <section class="secao" id="diferenciais">
-        <div class="container">
-            <div class="secao-titulo">
-                <h3>Por que escolher a Braia & Pessoa</h3>
-                <div class="linha-dourada"></div>
-                <p>Compromisso com a transparência, proximidade e resultados sustentáveis.</p>
-            </div>
-            <div class="diferenciais-grid">
-                <div class="dif-card">
-                    <span class="dif-numero">01</span>
-                    <div class="dif-texto">
-                        <h4>Atendimento próximo</h4>
-                        <p>Você fala diretamente com o advogado responsável pelo seu caso, sem intermediários.</p>
-                    </div>
-                </div>
-                <div class="dif-card">
-                    <span class="dif-numero">02</span>
-                    <div class="dif-texto">
-                        <h4>Transparência total</h4>
-                        <p>Honorários combinados por escrito, prognóstico realista e atualização periódica do andamento.</p>
-                    </div>
-                </div>
-                <div class="dif-card">
-                    <span class="dif-numero">03</span>
-                    <div class="dif-texto">
-                        <h4>Foco em prevenção</h4>
-                        <p>Antes de litigar, buscamos o caminho mais inteligente para evitar processos caros no futuro.</p>
-                    </div>
-                </div>
-                <div class="dif-card">
-                    <span class="dif-numero">04</span>
-                    <div class="dif-texto">
-                        <h4>Tecnologia a seu favor</h4>
-                        <p>Atendimento presencial em São Paulo e também on-line, com documentos digitais e WhatsApp.</p>
-                    </div>
-                </div>
-                <div class="dif-card">
-                    <span class="dif-numero">05</span>
-                    <div class="dif-texto">
-                        <h4>Sigilo profissional</h4>
-                        <p>Tudo o que você nos confia é protegido pelo sigilo da advocacia, com total discrição.</p>
-                    </div>
-                </div>
-                <div class="dif-card">
-                    <span class="dif-numero">06</span>
-                    <div class="dif-texto">
-                        <h4>Especialistas em MEI</h4>
-                        <p>Conhecemos a fundo as particularidades do microempreendedor individual e do PGMEI.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== MÉTODO ========== -->
-    <section class="secao secao-cinza" id="metodo">
-        <div class="container">
-            <div class="secao-titulo">
-                <h3>Como atuamos</h3>
-                <div class="linha-dourada"></div>
-                <p>Um método claro do primeiro contato à solução do seu caso.</p>
-            </div>
-            <div class="metodo-grid">
-                <div class="metodo-step">
-                    <span class="step-num">1</span>
-                    <h4>Atendimento inicial</h4>
-                    <p>Ouvimos sua história com atenção, reunimos documentos e entendemos seu objetivo — sem compromisso e com confidencialidade.</p>
-                </div>
-                <div class="metodo-step">
-                    <span class="step-num">2</span>
-                    <h4>Análise e diagnóstico</h4>
-                    <p>Estudamos a viabilidade jurídica, mapeamos riscos e prazos e apresentamos um parecer honesto sobre os caminhos possíveis.</p>
-                </div>
-                <div class="metodo-step">
-                    <span class="step-num">3</span>
-                    <h4>Estratégia personalizada</h4>
-                    <p>Definimos juntos a melhor abordagem: acordo, via administrativa ou ação judicial. Você decide com clareza.</p>
-                </div>
-                <div class="metodo-step">
-                    <span class="step-num">4</span>
-                    <h4>Execução e acompanhamento</h4>
-                    <p>Conduzimos o caso com técnica e mantemos você informado a cada movimentação relevante até a solução final.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FAQ ========== -->
-    <section class="secao" id="faq">
-        <div class="container">
-            <div class="secao-titulo">
-                <h3>Perguntas frequentes</h3>
-                <div class="linha-dourada"></div>
-                <p>Dúvidas comuns de quem nos procura.</p>
-            </div>
-            <div class="faq-lista">
-                <div class="faq-item" onclick="toggleFAQ(this)">
-                    <h4><span>Como funciona a primeira consulta?</span><span class="seta">▼</span></h4>
-                    <div class="faq-resposta">A primeira conversa para entender o seu caso e verificar a viabilidade jurídica é sem compromisso. Honorários só são cobrados após a análise e sempre combinados previamente por escrito.</div>
-                </div>
-                <div class="faq-item" onclick="toggleFAQ(this)">
-                    <h4><span>Atendem apenas em São Paulo?</span><span class="seta">▼</span></h4>
-                    <div class="faq-resposta">Nossa sede fica em São Paulo/SP, mas atendemos clientes de outras localidades de forma on-line, com reuniões por vídeo e assinatura digital de documentos.</div>
-                </div>
-                <div class="faq-item" onclick="toggleFAQ(this)">
-                    <h4><span>Como são calculados os honorários?</span><span class="seta">▼</span></h4>
-                    <div class="faq-resposta">Depende da natureza do serviço. Pode ser por ato, por hora técnica, fixo ou com parte vinculada ao êxito da causa. Tudo é detalhado em contrato transparente, sem custos escondidos.</div>
-                </div>
-                <div class="faq-item" onclick="toggleFAQ(this)">
-                    <h4><span>Quanto tempo leva para resolver meu caso?</span><span class="seta">▼</span></h4>
-                    <div class="faq-resposta">O prazo varia conforme a complexidade e a possibilidade de acordo. Na análise inicial apresentamos uma estimativa realista e mantemos você informado a cada movimentação relevante.</div>
-                </div>
-                <div class="faq-item" onclick="toggleFAQ(this)">
-                    <h4><span>Preciso ir até o escritório?</span><span class="seta">▼</span></h4>
-                    <div class="faq-resposta">Não necessariamente. O contato inicial pode ser por telefone, WhatsApp ou e-mail. Conforme o caso, agendamos atendimento presencial ou seguimos integralmente de forma digital.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CONTATO ========== -->
-    <section class="secao secao-cinza" id="contato">
-        <div class="container">
-            <div class="secao-titulo">
-                <h3>Fale conosco</h3>
-                <div class="linha-dourada"></div>
-                <p>Retornamos em até um dia útil. Sua primeira conversa é sem compromisso.</p>
-            </div>
-            <div class="contato-grid">
-                <form class="form-contato" id="formContato" onsubmit="event.preventDefault(); enviarWhatsApp();">
-                    <input type="text" id="nome" placeholder="Seu nome completo *" required>
-                    <input type="email" id="email" placeholder="Seu melhor e-mail *" required>
-                    <input type="tel" id="telefone" placeholder="Telefone / WhatsApp *" required>
-                    <select id="assunto">
-                        <option value="">Selecione o assunto</option>
-                        <option>Regularização de MEI</option>
-                        <option>DAS-MEI / PGMEI atrasado</option>
-                        <option>Benefícios do INSS para MEI</option>
-                        <option>Contratos e cobrança</option>
-                        <option>Defesa do negócio</option>
-                        <option>Proteção de marca</option>
-                        <option>LGPD para MEI</option>
-                        <option>Outro assunto</option>
-                    </select>
-                    <textarea id="mensagem" placeholder="Descreva brevemente o seu caso..."></textarea>
-                    <button type="submit">📩 Enviar mensagem</button>
-                    <p class="form-aviso">Este formulário não cria relação advogado-cliente nem deve conter informações sigilosas. O vínculo profissional só se estabelece mediante contrato.</p>
-                </form>
-                <div>
-                    <ul class="info-contato-lista">
-                        <li><span class="icone">📍</span> <strong>Endereço:</strong><br>Avenida Francisco Matarazzo, 1752<br>Conj 2612 Bloco A — Água Branca<br>São Paulo/SP — CEP 05001-200</li>
-                        <li><span class="icone">📞</span> <strong>Telefone / WhatsApp:</strong><br><a href="tel:+5511991355890" style="color:#1a2740;font-weight:600;">(11) 99135-5890</a></li>
-                        <li><span class="icone">📧</span> <strong>E-mail:</strong><br><a href="mailto:rovania@braiapessoa.adv.br" style="color:#1a2740;">rovania@braiapessoa.adv.br</a></li>
-                        <li><span class="icone">🕘</span> <strong>Horário de atendimento:</strong><br>Segunda a Sexta — 09h às 18h</li>
-                    </ul>
-                    <!-- Google Maps -->
-                    <div style="margin-top:16px;border-radius:10px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.1);">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3!2d-46.69!3d-23.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9c5e5e5e5e5%3A0x0!2sAv.%20Francisco%20Matarazzo%2C%201752%20-%20%C3%81gua%20Branca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005001-200!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        title="Localização do escritório Braia & Pessoa Advogados em São Paulo"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h5>Braia & Pessoa Advogados</h5>
-                    <p>CNPJ: 22.980.047/0001-00<br>
-                        Sociedade Simples Pura<br>
-                        Inscrita na OAB/SP<br>
-                        Desde 17 de junho de 2015</p>
-                </div>
-                <div>
-                    <h5>Links úteis</h5>
-                    <p><a href="#servicos">Serviços</a></p>
-                    <p><a href="#sobre">Sobre nós</a></p>
-                    <p><a href="#contato">Contato</a></p>
-                    <p><a href="#faq">Perguntas frequentes</a></p>
-                </div>
-                <div>
-                    <h5>Documentos legais</h5>
-                    <p><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
-                    <p><a href="termos-de-uso.html">Termos de Uso</a></p>
-                    <p style="font-size:0.78rem;color:#8895a2;margin-top:8px;">Em respeito ao Provimento nº 205/2021 da OAB e ao sigilo profissional, depoimentos são publicados de forma resumida e com identificação preservada.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2015–2026 Braia & Pessoa Sociedade de Advogados. Todos os direitos reservados. | <a href="politica-de-privacidade.html" style="color:#8895a2;">Privacidade</a> | <a href="termos-de-uso.html" style="color:#8895a2;">Termos de Uso</a></p>
-                <p style="margin-top:6px;">Este site tem caráter informativo e não substitui a consulta a um advogado. Nenhuma informação aqui contida configura relação profissional ou garantia de resultado.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
-    <a href="https://wa.me/5511991355890?text=Ol%C3%A1%2C+quero+informa%C3%A7%C3%B5es+sobre+servi%C3%A7os+jur%C3%ADdicos+para+MEI." class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" title="Fale conosco pelo WhatsApp">💬</a>
-
-    <script>
-        function toggleFAQ(el) {
-            el.classList.toggle('aberto');
-        }
-
-        function enviarWhatsApp() {
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const telefone = document.getElementById('telefone').value.trim();
-            const assunto = document.getElementById('assunto').value;
-            const mensagem = document.getElementById('mensagem').value.trim();
-            if (!nome || !email || !telefone) {
-                alert('Por favor, preencha nome, e-mail e telefone antes de enviar.');
-                return;
-            }
-            let texto = `Olá, meu nome é ${nome}. `;
-            texto += `E-mail: ${email}. Tel: ${telefone}. `;
-            if (assunto) texto += `Assunto: ${assunto}. `;
-            if (mensagem) texto += `Mensagem: ${mensagem}`;
-            const url = `https://wa.me/5511991355890?text=${encodeURIComponent(texto)}`;
-            window.open(url, '_blank', 'noopener,noreferrer');
-        }
-    </script>
-
 </body>
 </html>
